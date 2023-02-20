@@ -1,0 +1,176 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-font {
+    font-family: 'Montserrat', sans-serif;
+    color:  hsl(228, 12%, 48%);
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.secondary-font {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    padding: 8px 0;
+}
+
+.card-container {
+    margin: 32px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 338px;
+}
+
+.card-img-container {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px 12px 0 0;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.mobile-img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-text-container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+    padding: 12px 24px 24px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 0 12px 12px;
+    max-width: 338px;
+}
+
+.title {
+    line-height: 1;
+}
+
+.sub-title {
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.main-text {
+    line-height: 1.5;
+} 
+
+.price-tag {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.main-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    margin: 0;
+}
+
+.sec-price {
+    font-size: 12px;
+    margin: 0 24px;
+    text-decoration: line-through;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 4px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: none;
+}
+
+.cart-icon {
+    margin: 0;
+    padding: 4px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;  
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        max-width: 676px;
+    }
+
+    .mobile-img{
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        border-radius: 12px 0 0 12px;
+        height: 100%;
+    } 
+    
+    .card-img-container {
+        margin: 0;
+        max-width: 280px;
+        height: 100%;
+        border-radius: 12px 0 0 12px;
+    }
+
+    .card-text-container {
+        margin: 0;
+        height: 420px;
+        max-width: 280px;
+        border-radius: 0 12px 12px 0;
+        padding: 14px 26px 26px;
+    }
+
+    .main-font {
+        padding: 12px 0;
+    }
+
+    button {
+        margin-top: 14px;
+    }
+
+    button:hover {
+        background-color: #1a3f31;
+    }
+}
+
+
