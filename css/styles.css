@@ -130,7 +130,9 @@ button {
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        max-width: 676px;
+        max-width: 560px;
+        border-radius: 12px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     }
 
     .mobile-img{
